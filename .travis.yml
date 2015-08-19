@@ -39,8 +39,11 @@ install:
   #- wget http://google-refine.googlecode.com/files/google-refine-2.1-r2136.tar.gz
   #- tar -zxvf google-refine-2.1-r2136.tar.gz
   #- sudo google-refine-2.1/refine
+  - sudo apt-get install gfortran libopenblas-dev liblapack-dev
 
-
+  - pip install numpy==1.9.2
+  - pip install scipy==0.16.0
+  - pip install PySAL==1.10.0
   - pip install -r linuxreqs.txt -e .
   - pip install psycopg2 coveralls
   #https://code.google.com/p/google-refine/downloads/detail?name=google-refine-2.1-r2136.tar.gz&can=1&q=
