@@ -281,7 +281,7 @@
     }*/
 
     window.loader.loadGeoJSON = function(type, handlerFunc, cluster,countries) {
-
+//ssss
         url = "/static/json/" + type + "_None.geojson";
         $.ajax({
             url: url,
